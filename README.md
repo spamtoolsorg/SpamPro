@@ -6,49 +6,53 @@
 
 ---
 
-## ✨ Features
+# ✨ SpamPro Email Sender Features (v2.2.0)
 
-### 🔁 SMTP Rotation
+## 🔁 SMTP Rotation
 - Add multiple SMTPs and rotate them after X emails
 - Reduces chances of blacklisting and improves delivery
 - Built-in reconnect and retry logic
 
-### ⏱ Email Delay Control
+## ⏱ Email Delay Control
 - Fixed, random, or human-like email delays
 - Helps avoid spam detection by mimicking human behavior
 
-### 📩 Real-Time Bounce Checking
+## 📩 Real-Time Bounce Checking
 - Skip invalid/non-existent emails while sending
 - Saves 80%+ time with automatic bounce skipping
 - Powered by **SpamTools Validation API**
+- **Bounce Checking While Scanning:** Automatically checks each email before sending; if the email is bounced, it skips it, otherwise it sends. Saves your time and avoids unnecessary retries.
+- **New in v2.2.0:** Enhanced bounce detection while sending
 
-### 📎 Attachment Templates
+## 📎 Attachment Templates
 - Supports HTML, TXT, DOC, PDF attachments
 - Dynamic placeholders supported inside attachments
 
-### 🧠 Dynamic Personalization
+## 🧠 Dynamic Personalization
 - Use tokens like `[@email]`, `[@user]`, `[@domain]`, `[@rannum]`, `[@md5]`
 - Customize subjects, bodies, headers, and attachments dynamically
 
-### 🧪 Live SMTP Tools
+## 🧪 Live SMTP Tools
 - One-click test, connect, rotate, and log SMTP status
 - Detailed logs with live feedback during campaigns
 
-### 🧩 HTML Editor + Preview
+## 🧩 HTML Editor + Preview
 - One-click basic HTML insertion
 - Preview how your email will look with inbox rendering
 
-### 🛡 Proxy Support
+## 🛡 Proxy Support
 - Add proxies manually or via file
 - Rotate proxies after X emails using built-in proxy chain
+- **New in v2.2.0:** Enhanced proxy handling for improved delivery and anonymity
 
-### 🖥 Multi-PC Compatibility
+## 🖥 Multi-PC Compatibility
 - Works across multiple systems with the same license
 - License tied to your account, not your device
 
-### 📦 Auto Updates + Version Control
+## 📦 Auto Updates + Version Control
 - Get free lifetime updates
 - Stable, tested builds and version rollback available
+
 
 ---
 
@@ -134,4 +138,8 @@ SpamPro requires a **valid license** to unlock full functionality.
 📂 Repo: [https://github.com/spamtoolsorg/SpamPro](https://github.com/spamtoolsorg/SpamPro)
 
 ---
+
+## Changelog
+
+See the full history of updates [here](CHANGELOG.md).
 
