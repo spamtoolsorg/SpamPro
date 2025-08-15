@@ -2,7 +2,9 @@
 
 **SpamPro** is a powerful, feature-rich email sender built for **red teaming**, **spam testing**, **penetration testing**, and **bulk marketing**. Whether you’re testing spam filters, simulating phishing attacks, or executing outreach campaigns at scale, SpamPro gives you advanced control, stealth features, and automation.
 
-> ⚠️ **This tool is for educational, red team, and authorized marketing use only.**
+> ⚠️ **An active license is required to use SpamPro Email Sender.**  
+> [**BUY SpamPro Email Sender**](https://spamtools.org/product/spampro-email-sender-2025/)
+
 
 ---
 
