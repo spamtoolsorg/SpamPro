@@ -2,7 +2,33 @@
 
 All notable changes to SpamPro Email Sender will be documented in this file.
 
-## [2.2.0] - LATEST
+## [2.3.0] - Latest
+- Dynamic SMTP row management with add/delete functionality
+- Intelligent SMTP auto-configuration system
+- Comprehensive connection fallback mechanism
+- Enhanced dark mode UI implementation
+- Smart port and SSL detection
+- Improved connection diagnostics
+- Proxy Support
+- Bounce Checking While Sending
+
+### Fixed
+- SMTP connection issues with non-standard configurations
+- SSL/TLS handshake problems
+- UI responsiveness issues in SMTP manager
+- Port auto-detection logic
+- Table row selection and deletion bugs
+
+### Security
+- Enhanced SSL/TLS connection validation
+- Improved SMTP authentication security
+
+### Performance
+- Optimized SMTP connection timeout handling
+- Faster connection establishment with intelligent port detection
+- Reduced connection retry overhead
+
+## [2.2.0] 
 **Note:** This update is only available to users with an active license.
 
 ### New Features
