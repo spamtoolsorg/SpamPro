@@ -2,7 +2,19 @@
 
 All notable changes to SpamPro Email Sender will be documented in this file.
 
-## [2.3.0] - Latest
+## [2.4.0] - 2025-09-18 - Latest
+### ✨ New Features
+- Added **Office365 In-App Checker**
+- Integrated **SpamTools** for seamless workflow
+- Introduced a **more robust application design**
+
+### 🐞 Fixes & Improvements
+- Enhanced **message body handling**
+- Improved **email sending reliability and robustness**
+
+
+
+## [2.3.0] 
 - Dynamic SMTP row management with add/delete functionality
 - Intelligent SMTP auto-configuration system
 - Comprehensive connection fallback mechanism
