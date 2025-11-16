@@ -2,7 +2,24 @@
 
 All notable changes to SpamPro Email Sender will be documented in this file.
 
-## [2.4.0] - 2025-09-18 - Latest
+## [2.5.0] - 2025-11-16 - Latest
+### ✨ New Features
+- Added **GSuite, Comcast, and enhanced Office email checkers**
+- Added **Stop, Resume, and Pause controls** for email tasks
+- Integrated **SpamTools** for seamless workflow
+- Added **pre-made SMTP templates** for faster setup
+- **Subject now supports placeholders** for dynamic email content
+- Introduced a **more robust and modern application design**
+
+### 🐞 Fixes & Improvements
+- Fixed **proxy errors and app crashes**
+- Improved **HTML email view and message body handling**
+- Enhanced **email sending reliability and robustness**
+- Optimized **SMTP connection timeout handling and connection speed**
+- Reduced **connection retry overhead**
+
+
+## [2.4.0] - 2025-09-18
 ### ✨ New Features
 - Added **Office365 In-App Checker**
 - Integrated **SpamTools** for seamless workflow
