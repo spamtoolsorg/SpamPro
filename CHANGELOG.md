@@ -2,7 +2,7 @@
 
 All notable changes to SpamPro Email Sender will be documented in this file.
 
-## v2.6.0 - December 2024 - Latest
+## v2.6.0 - December 2025 - Latest
 
 ### New Features
 - **Custom Email Headers** - Configure custom headers like Reply-To and more with an easy-to-use dialog
