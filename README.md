@@ -1,30 +1,37 @@
 # 🚀 SpamPro Email Sender 2025
 
-**SpamPro** is a powerful, feature-rich email sender built for **red teaming**, **spam testing**, **penetration testing**, and **bulk marketing**. Whether you’re testing spam filters, simulating phishing attacks, or executing outreach campaigns at scale, SpamPro gives you advanced control, stealth features, and automation.
+**SpamPro** is a powerful, feature-rich email sender built for **red teaming**, **spam testing**, **penetration testing**, and **bulk marketing**. Whether you're testing spam filters, simulating phishing attacks, or executing outreach campaigns at scale, SpamPro gives you advanced control, stealth features, and automation.
 
 > ⚠️ **An active license is required to use SpamPro Email Sender.**  
 > [**BUY SpamPro Email Sender**](https://spamtools.org/product/spampro-email-sender-2025/)
 
-
 ---
 
-# ✨ SpamPro Email Sender Features (v2.2.0)
+# ✨ SpamPro Email Sender Features (v2.6.0)
 
-## 🔁 SMTP Rotation
+## 🔁 SMTP Rotation & Management
 - Add multiple SMTPs and rotate them after X emails
+- Dynamic SMTP row management with add/delete functionality
+- Intelligent SMTP auto-configuration system
+- Pre-made SMTP templates for faster setup
+- Comprehensive connection fallback mechanism
+- Smart port and SSL detection
+- Port auto-detection - automatically uses the correct port and encryption
+- Improved connection diagnostics
 - Reduces chances of blacklisting and improves delivery
 - Built-in reconnect and retry logic
 
 ## ⏱ Email Delay Control
 - Fixed, random, or human-like email delays
 - Helps avoid spam detection by mimicking human behavior
+- Optimized timing for realistic sending patterns
 
 ## 📩 Real-Time Bounce Checking
 - Skip invalid/non-existent emails while sending
 - Saves 80%+ time with automatic bounce skipping
 - Powered by **SpamTools Validation API**
-- **Bounce Checking While Scanning:** Automatically checks each email before sending; if the email is bounced, it skips it, otherwise it sends. Saves your time and avoids unnecessary retries.
-- **New in v2.2.0:** Enhanced bounce detection while sending
+- **Bounce Checking While Sending:** Automatically checks each email before sending; if the email is bounced, it skips it, otherwise it sends
+- Integrated **GSuite, Comcast, and Office365 email checkers**
 
 ## 📎 Attachment Templates
 - Supports HTML, TXT, DOC, PDF attachments
@@ -32,20 +39,38 @@
 
 ## 🧠 Dynamic Personalization
 - Use tokens like `[@email]`, `[@user]`, `[@domain]`, `[@rannum]`, `[@md5]`
+- **Subject now supports placeholders** for dynamic email content
 - Customize subjects, bodies, headers, and attachments dynamically
+
+## 📧 Custom Email Headers
+- **Configure custom headers** like Reply-To and more with an easy-to-use dialog
+- **Smart header management** - Enable/disable custom headers with a simple toggle
+- **Visual status indicators** - See your custom header status in the dashboard
+- **Persistent settings** - Custom headers are now saved and remembered between sessions
+- Enhanced email compatibility with AWS SES, Gmail, Outlook, and all major SMTP providers
 
 ## 🧪 Live SMTP Tools
 - One-click test, connect, rotate, and log SMTP status
 - Detailed logs with live feedback during campaigns
+- Enhanced SSL/TLS connection validation
+- Improved SMTP authentication security
 
 ## 🧩 HTML Editor + Preview
+- **Rich HTML Section** - Add basic HTML with a single click
+- **Email Preview** - See how your message will look in the inbox (click the 👁 icon)
+- **Preview Window** - Opens a full preview in a new window
 - One-click basic HTML insertion
 - Preview how your email will look with inbox rendering
 
 ## 🛡 Proxy Support
 - Add proxies manually or via file
 - Rotate proxies after X emails using built-in proxy chain
-- **New in v2.2.0:** Enhanced proxy handling for improved delivery and anonymity
+- Enhanced proxy handling for improved delivery and anonymity
+
+## ⏯ Campaign Control
+- **Stop, Resume, and Pause controls** for email tasks
+- Real-time campaign management
+- Track sending progress and status
 
 ## 🖥 Multi-PC Compatibility
 - Works across multiple systems with the same license
@@ -55,6 +80,11 @@
 - Get free lifetime updates
 - Stable, tested builds and version rollback available
 
+## 🎨 Modern UI/UX
+- Enhanced dark mode UI implementation
+- More robust and modern application design
+- Improved UI responsiveness
+- Visual feedback and status indicators
 
 ---
 
@@ -80,15 +110,18 @@
 
 3. **Load SMTPs and Lists**
    - Add multiple SMTPs manually or via file
+   - Use pre-made SMTP templates for quick setup
    - Load email list (TXT/CSV)
 
 4. **Configure Campaign Settings**
    - Choose delay settings, proxy settings, and bounce API
-   - Customize content using placeholders
+   - Configure custom email headers
+   - Customize content using placeholders in subject and body
 
 5. **Send Emails**
    - Hit send and track real-time progress
    - Monitor live logs, bounces, and SMTP rotation
+   - Use Stop, Resume, and Pause controls as needed
 
 ---
 
@@ -132,16 +165,32 @@ SpamPro requires a **valid license** to unlock full functionality.
 
 ---
 
-
----
-
 ## 🌐 GitHub Repository
 
 📂 Repo: [https://github.com/spamtoolsorg/SpamPro](https://github.com/spamtoolsorg/SpamPro)
 
 ---
 
+## 📋 Latest Updates - v2.6.0 (December 2025)
+
+### New Features
+- **Custom Email Headers** - Configure custom headers like Reply-To and more with an easy-to-use dialog
+- **Enhanced Email Compatibility** - Improved support for AWS SES, Gmail, Outlook, and all major SMTP providers
+- **Better Email Delivery** - Fixed duplicate header issues that caused emails to bounce
+
+### Improvements
+- **Smart Header Management** - Enable/disable custom headers with a simple toggle
+- **Visual Status Indicators** - See your custom header status in the dashboard
+- **Persistent Settings** - Custom headers are now saved and remembered between sessions
+- **Port Auto-Detection** - Automatically uses the correct port and encryption for your SMTP server
+
+### Bug Fixes
+- Fixed "Duplicate header 'MIME-Version'" error with AWS SES and other strict SMTP servers
+- Fixed port mismatch issues where wrong ports were being used
+- Improved error messages for easier troubleshooting
+
+---
+
 ## Changelog
 
 See the full history of updates [here](CHANGELOG.md).
-
