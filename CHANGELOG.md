@@ -2,7 +2,27 @@
 
 All notable changes to SpamPro Email Sender will be documented in this file.
 
-## [2.5.0] - 2025-11-16 - Latest
+## v2.6.0 - December 2024 - Latest
+
+### New Features
+- **Custom Email Headers** - Configure custom headers like Reply-To and more with an easy-to-use dialog
+- **Enhanced Email Compatibility** - Improved support for AWS SES, Gmail, Outlook, and all major SMTP providers
+- **Better Email Delivery** - Fixed duplicate header issues that caused emails to bounce
+
+### Improvements
+- **Smart Header Management** - Enable/disable custom headers with a simple toggle
+- **Visual Status Indicators** - See your custom header status in the dashboard
+- **Persistent Settings** - Custom headers are now saved and remembered between sessions
+- **Port Auto-Detection** - Automatically uses the correct port and encryption for your SMTP server
+
+### Bug Fixes
+- Fixed "Duplicate header 'MIME-Version'" error with AWS SES and other strict SMTP servers
+- Fixed port mismatch issues where wrong ports were being used
+- Improved error messages for easier troubleshooting
+
+
+
+## [2.5.0] - 2025-11-16 
 ### ✨ New Features
 - Added **GSuite, Comcast, and enhanced Office email checkers**
 - Added **Stop, Resume, and Pause controls** for email tasks
