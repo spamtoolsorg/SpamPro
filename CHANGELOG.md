@@ -2,7 +2,29 @@
 
 All notable changes to SpamPro Email Sender will be documented in this file.
 
-## v2.6.0 - December 2025 - Latest
+## [v2.7.0] - January 2026 - Latest
+
+### ✨ New Features
+- **Message Rotation System** - Add multiple email messages in settings with automatic rotation after X emails sent
+- **Individual Message Limits** - Configure send limits for each message independently
+- **Advanced Pattern Evasion** - Vary content across large campaigns to avoid spam filter detection
+- **Multi-Message Management** - Perfect for huge lists and maintaining natural sending behavior
+
+### 🔧 Improvements
+- **Enhanced Campaign Control** - Better handling of multi-message campaigns
+- **Improved Deliverability** - Dynamic message switching for maximum inbox placement
+- **Persistent Message Settings** - All message rotation settings are saved and remembered between sessions
+- **Optimized Message Queue** - Efficient handling of multiple message templates during bulk sends
+
+### 📝 Notes
+- Message rotation is ideal for large-scale campaigns with 10,000+ recipients
+- Each message can have its own rotation limit (e.g., Message 1 sends 1000 times, then switches to Message 2)
+- Supports all existing placeholders and dynamic personalization in rotated messages
+- Works seamlessly with SMTP rotation and proxy rotation features
+
+
+
+## v2.6.0 - December 2025
 
 ### New Features
 - **Custom Email Headers** - Configure custom headers like Reply-To and more with an easy-to-use dialog
