@@ -7,7 +7,16 @@
 
 ---
 
-# ✨ SpamPro Email Sender Features (v2.6.0)
+# ✨ SpamPro Email Sender Features (v2.7.0)
+
+## 🔄 Message Rotation System
+- Add multiple email messages in settings
+- Automatically rotate messages after X emails sent
+- Configure individual send limits for each message
+- Perfect for huge lists and avoiding spam filters
+- Helps evade pattern detection by varying content
+- Maintains natural sending behavior across large campaigns
+- Dynamic message switching for maximum deliverability
 
 ## 🔁 SMTP Rotation & Management
 - Add multiple SMTPs and rotate them after X emails
@@ -117,6 +126,7 @@
    - Choose delay settings, proxy settings, and bounce API
    - Configure custom email headers
    - Customize content using placeholders in subject and body
+   - Set up message rotation for multi-message campaigns
 
 5. **Send Emails**
    - Hit send and track real-time progress
@@ -171,7 +181,22 @@ SpamPro requires a **valid license** to unlock full functionality.
 
 ---
 
-## 📋 Latest Updates - v2.6.0 (December 2025)
+## 📋 Latest Updates - v2.7.0 (January 2026)
+
+### New Features
+- **Message Rotation System** - Add multiple email messages in settings and rotate them automatically after X emails sent
+- **Individual Message Limits** - Configure send limits for each message independently
+- **Advanced Pattern Evasion** - Vary content across large campaigns to avoid spam filter detection
+- **Multi-Message Management** - Perfect for huge lists and maintaining natural sending behavior
+
+### Improvements
+- **Enhanced Campaign Control** - Better handling of multi-message campaigns
+- **Improved Deliverability** - Dynamic message switching for maximum inbox placement
+- **Persistent Message Settings** - All message rotation settings are saved between sessions
+
+---
+
+## 📋 Previous Updates - v2.6.0 (December 2025)
 
 ### New Features
 - **Custom Email Headers** - Configure custom headers like Reply-To and more with an easy-to-use dialog
