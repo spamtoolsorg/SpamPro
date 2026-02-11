@@ -2,7 +2,17 @@
 
 All notable changes to SpamPro Email Sender will be documented in this file.
 
-## [v2.7.0] - January 2026 - Latest
+
+## [v2.8.5] - (2026/2/11) Latest
+## 🚀 Improvements
+- Improved email sending
+- Clean trusted headers
+- Fast performance
+- Multi-API support
+- Improved SMTP connections
+
+
+## [v2.7.0] - January 2026
 
 ### ✨ New Features
 - **Message Rotation System** - Add multiple email messages in settings with automatic rotation after X emails sent
