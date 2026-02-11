@@ -181,7 +181,15 @@ SpamPro requires a **valid license** to unlock full functionality.
 
 ---
 
-## 📋 Latest Updates - v2.7.0 (January 2026)
+## Latest Updates - v2.8.5 (2026/2/11)
+## 🚀 Improvements
+- Improved email sending
+- Clean trusted headers
+- Fast performance
+- Multi-API support
+- Improved SMTP connections
+
+## 📋 Previous Updates - v2.7.0 (January 2026)
 
 ### New Features
 - **Message Rotation System** - Add multiple email messages in settings and rotate them automatically after X emails sent
@@ -193,26 +201,6 @@ SpamPro requires a **valid license** to unlock full functionality.
 - **Enhanced Campaign Control** - Better handling of multi-message campaigns
 - **Improved Deliverability** - Dynamic message switching for maximum inbox placement
 - **Persistent Message Settings** - All message rotation settings are saved between sessions
-
----
-
-## 📋 Previous Updates - v2.6.0 (December 2025)
-
-### New Features
-- **Custom Email Headers** - Configure custom headers like Reply-To and more with an easy-to-use dialog
-- **Enhanced Email Compatibility** - Improved support for AWS SES, Gmail, Outlook, and all major SMTP providers
-- **Better Email Delivery** - Fixed duplicate header issues that caused emails to bounce
-
-### Improvements
-- **Smart Header Management** - Enable/disable custom headers with a simple toggle
-- **Visual Status Indicators** - See your custom header status in the dashboard
-- **Persistent Settings** - Custom headers are now saved and remembered between sessions
-- **Port Auto-Detection** - Automatically uses the correct port and encryption for your SMTP server
-
-### Bug Fixes
-- Fixed "Duplicate header 'MIME-Version'" error with AWS SES and other strict SMTP servers
-- Fixed port mismatch issues where wrong ports were being used
-- Improved error messages for easier troubleshooting
 
 ---
 
