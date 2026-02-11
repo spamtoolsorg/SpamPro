@@ -7,7 +7,7 @@
 
 ---
 
-# ✨ SpamPro Email Sender Features (v2.7.0)
+# ✨ SpamPro Email Sender Features (v2.8.5)
 
 ## 🔄 Message Rotation System
 - Add multiple email messages in settings
