@@ -7,7 +7,15 @@
 
 ---
 
-# ✨ SpamPro Email Sender Features (v2.8.5)
+# ✨ SpamPro Email Sender Features (v2.9.0)
+
+## Multi Threading
+- Multi-Threading
+- Enable/Disable Multi-Threading
+- Fast Email Sending, SMTP connection
+- Quick Multi SMTP email sending in parallel
+- Safe and Secure
+
 
 ## 🔄 Message Rotation System
 - Add multiple email messages in settings
