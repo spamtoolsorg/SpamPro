@@ -2,8 +2,14 @@
 
 All notable changes to SpamPro Email Sender will be documented in this file.
 
+## [v2.9.0] - (2026/3/10) Latest
+#### New Feature:
+- Multi-Threading
+- More Improved Email Sending
+- Stable SMTP Connection
+- Fast email sending
 
-## [v2.8.5] - (2026/2/11) Latest
+## [v2.8.5] - (2026/2/11) 
 ## 🚀 Improvements
 - Improved email sending
 - Clean trusted headers
