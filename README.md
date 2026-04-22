@@ -1,111 +1,217 @@
-# 🚀 SpamPro Email Sender 2025
+# SpamPro Email Sender 2025
 
 **SpamPro** is a powerful, feature-rich email sender built for **red teaming**, **spam testing**, **penetration testing**, and **bulk marketing**. Whether you're testing spam filters, simulating phishing attacks, or executing outreach campaigns at scale, SpamPro gives you advanced control, stealth features, and automation.
 
-> ⚠️ **An active license is required to use SpamPro Email Sender.**  
+> **An active license is required to use SpamPro Email Sender.**
 > [**BUY SpamPro Email Sender**](https://spamtools.org/product/spampro-email-sender-2025/)
 
 ---
 
-# ✨ SpamPro Email Sender Features (v2.9.0)
+# SpamPro Email Sender Features (v3.0.1)
 
-## Multi Threading
-- Multi-Threading
-- Enable/Disable Multi-Threading
-- Fast Email Sending, SMTP connection
-- Quick Multi SMTP email sending in parallel
-- Safe and Secure
+## SpamTools AI Integration
+- AI-powered content generation using SpamTools API
+- **Campaign Designer** — generate complete campaigns (from-names, subjects, and full HTML email templates) in one click
+- AI generates clean, deliverable, non-spammy content with proper spam filter avoidance
+- AI button in every feature — From-Name Rotator, Subject Rotator, and Campaign Designer each have their own AI generate button
+- Supports placeholder and spintax injection via AI when requested
+- **AI Spam Checker** — analyze your email content for spam score (0-10 scale) with detailed warnings and suggestions
+- Uses your existing SpamTools API key — no extra configuration needed
 
+## Multi From-Name Rotation
+- Add multiple sender display names and rotate them during sending
+- Configure rotation interval (rotate after X emails sent)
+- Supports placeholders ([@user], [@company], etc.) and spintax ({Option1|Option2}) inside from-names
+- AI-powered from-name generation — describe what you need and AI creates professional sender names
+- Add, remove, and manage from-names in a clean table UI
+- Enable/disable with a single toggle
 
-## 🔄 Message Rotation System
+## Multi Subject Rotation
+- Add multiple subject lines and rotate them during sending
+- Configure rotation interval per campaign
+- Supports all placeholders and spintax syntax
+- AI-powered subject generation — describe your campaign and AI creates engaging, non-spammy subjects
+- Add, remove, and manage subjects in a table UI
+- Enable/disable with a single toggle
+
+## Message Rotation System
 - Add multiple email messages in settings
 - Automatically rotate messages after X emails sent
 - Configure individual send limits for each message
-- Perfect for huge lists and avoiding spam filters
-- Helps evade pattern detection by varying content
-- Maintains natural sending behavior across large campaigns
+- Supports rich HTML and plain text messages
 - Dynamic message switching for maximum deliverability
+- Maintains natural sending behavior across large campaigns
 
-## 🔁 SMTP Rotation & Management
+## DKIM Signing
+- Sign outgoing emails with DKIM for authentication and anti-spoofing
+- Configure private key, selector, and domain
+- Improves inbox placement and sender reputation
+- Enable/disable with a toggle in the Deliverability tab
+
+## List-Unsubscribe Headers (RFC 8058)
+- Add one-click List-Unsubscribe headers to comply with RFC 8058
+- Improves deliverability and sender trust with major providers
+- Configure unsubscribe URL per campaign
+- Enable/disable with a toggle in the Deliverability tab
+
+## Spintax Engine
+- Randomize email content per recipient using {option1|option2|option3} syntax
+- Supports nested spintax: {Good {morning|evening}|Hello {there|friend}}
+- Works in subject lines, from-names, and message bodies
+- Each recipient gets a unique variation — helps avoid pattern detection
+
+## Dynamic Personalization & Placeholders
+- Email-based: [@email], [@user], [@domain], [@company], [@tld], [@project]
+- Random/unique: [@md5], [@ranstr], [@rannum] — unique per recipient
+- Date/time: [@date], [@time], [@datetime], [@timestamp], [@year], [@month], [@day], [@hour], [@minute], [@second], [@date_us], [@date_eu], [@time_12], [@weekday], [@month_name]
+- Placeholders work in subjects, from-names, message bodies, and custom headers
+- Combine with spintax for maximum variation
+
+## Campaign Designer (AI-Powered)
+- One-click complete campaign generation
+- Describe your campaign goal and AI creates everything:
+  - Multiple from-names (professional, varied, industry-matched)
+  - Multiple subject lines (engaging, non-spammy, spam-filter safe)
+  - Full HTML email template (inline CSS, table-based, email-client compatible)
+- Choose what to generate: from-names only, subjects only, message body only, or all three
+- Configure count for each (e.g., 5 from-names, 8 subjects)
+- AI follows strict deliverability guidelines — avoids spam trigger words, uses proper structure
+- Generated content auto-applies to the respective rotation tables
+
+## Campaign Import & Export
+- Export campaign settings to encrypted JSON file
+- Import campaigns from file to quickly load configurations
+- Exports include: from-names, subjects, message body, SMTP settings, headers, rotation config
+- Email recipient lists are never included in exports for security
+- Share campaign configurations between team members safely
+
+## SMTP Rotation & Management
 - Add multiple SMTPs and rotate them after X emails
 - Dynamic SMTP row management with add/delete functionality
 - Intelligent SMTP auto-configuration system
 - Pre-made SMTP templates for faster setup
 - Comprehensive connection fallback mechanism
-- Smart port and SSL detection
-- Port auto-detection - automatically uses the correct port and encryption
-- Improved connection diagnostics
-- Reduces chances of blacklisting and improves delivery
+- Smart port and SSL/TLS/STARTTLS auto-detection
 - Built-in reconnect and retry logic
+- Reduces chances of blacklisting and improves delivery
 
-## ⏱ Email Delay Control
+## Per-Domain Send Throttling
+- Automatic rate limiting per recipient domain
+- Predefined limits for major providers (Gmail: 50/hr, Yahoo: 30/hr, Outlook: 40/hr, etc.)
+- Prevents rate-limit blocks and temporary bans
+- Configurable limits per domain
+- Enable/disable in settings
+
+## Soft Bounce Retry
+- Automatically retry emails that receive soft bounce (4xx) responses
+- Configurable retry attempts and exponential backoff
+- Distinguishes between soft bounces (temporary) and hard bounces (permanent)
+- Enable/disable in settings
+
+## SMTP Connection Health Monitoring
+- Real-time monitoring of SMTP connection health
+- Automatic failover to backup SMTP when primary degrades
+- Periodic health checks during sending campaigns
+- Detects degraded servers before they cause failures
+
+## Session Tracking & Campaign Resumption
+- Tracks which recipients have been sent to in each session
+- Resume interrupted campaigns without re-sending to previous recipients
+- Automatic session cleanup after completion
+- Prevents duplicate sends after crashes or interruptions
+
+## Multi-Threading
+- Multi-threaded email sending for high throughput
+- Enable/disable multi-threading per campaign
+- Fast SMTP connection handling in parallel
+- Safe and secure thread management
+
+## Real-Time Bounce Checking
+- Skip invalid/non-existent emails while sending
+- Saves 80%+ time with automatic bounce skipping
+- Powered by SpamTools Validation API
+- Automatically checks each email before sending — skips bounced, sends valid
+- Integrated Office365, GSuite, and Comcast email checkers
+- Validation history with score tracking
+
+## AI Spam Checker
+- Analyze email content for spam score before sending
+- AI-powered analysis using SpamTools API
+- Score from 0-10 with detailed breakdown
+- Identifies specific issues: spam trigger words, formatting problems, header issues
+- Actionable suggestions to improve deliverability
+- Check your email template before launching a campaign
+
+## Email Checkers
+- **Office365 Checker** — validate if Office365 email addresses exist
+- **GSuite Checker** — validate Google Workspace email addresses
+- **Comcast Checker** — validate Comcast email addresses
+- Proxy support for all checkers
+- Bulk checking with file import
+- Real-time results with export capability
+
+## Attachment Templates
+- Supports HTML, TXT, DOC, PDF attachments
+- Dynamic placeholders supported inside attachments
+- Size validation (25MB limit)
+
+## Custom Email Headers
+- Configure custom headers (Reply-To, X-Priority, X-Mailer, etc.) with an easy-to-use dialog
+- Smart header management — enable/disable custom headers with a simple toggle
+- Visual status indicators in the dashboard
+- Persistent settings saved between sessions
+- Compatible with AWS SES, Gmail, Outlook, and all major SMTP providers
+
+## Email Delay Control
 - Fixed, random, or human-like email delays
 - Helps avoid spam detection by mimicking human behavior
 - Optimized timing for realistic sending patterns
 
-## 📩 Real-Time Bounce Checking
-- Skip invalid/non-existent emails while sending
-- Saves 80%+ time with automatic bounce skipping
-- Powered by **SpamTools Validation API**
-- **Bounce Checking While Sending:** Automatically checks each email before sending; if the email is bounced, it skips it, otherwise it sends
-- Integrated **GSuite, Comcast, and Office365 email checkers**
-
-## 📎 Attachment Templates
-- Supports HTML, TXT, DOC, PDF attachments
-- Dynamic placeholders supported inside attachments
-
-## 🧠 Dynamic Personalization
-- Use tokens like `[@email]`, `[@user]`, `[@domain]`, `[@rannum]`, `[@md5]`
-- **Subject now supports placeholders** for dynamic email content
-- Customize subjects, bodies, headers, and attachments dynamically
-
-## 📧 Custom Email Headers
-- **Configure custom headers** like Reply-To and more with an easy-to-use dialog
-- **Smart header management** - Enable/disable custom headers with a simple toggle
-- **Visual status indicators** - See your custom header status in the dashboard
-- **Persistent settings** - Custom headers are now saved and remembered between sessions
-- Enhanced email compatibility with AWS SES, Gmail, Outlook, and all major SMTP providers
-
-## 🧪 Live SMTP Tools
-- One-click test, connect, rotate, and log SMTP status
-- Detailed logs with live feedback during campaigns
-- Enhanced SSL/TLS connection validation
-- Improved SMTP authentication security
-
-## 🧩 HTML Editor + Preview
-- **Rich HTML Section** - Add basic HTML with a single click
-- **Email Preview** - See how your message will look in the inbox (click the 👁 icon)
-- **Preview Window** - Opens a full preview in a new window
-- One-click basic HTML insertion
-- Preview how your email will look with inbox rendering
-
-## 🛡 Proxy Support
+## Proxy Support
 - Add proxies manually or via file
+- SOCKS proxy rotation (rotate/random modes)
 - Rotate proxies after X emails using built-in proxy chain
+- Proxy testing and validation
 - Enhanced proxy handling for improved delivery and anonymity
 
-## ⏯ Campaign Control
-- **Stop, Resume, and Pause controls** for email tasks
+## HTML Editor + Preview
+- Rich text editor with formatting toolbar
+- Add basic HTML with a single click
+- Email preview — see how your message will look in the inbox
+- Full preview window with rendered HTML
+- Raw HTML source editing for advanced users
+
+## Campaign Control
+- Stop, Resume, and Pause controls for email tasks
 - Real-time campaign management
 - Track sending progress and status
+- Live logs with detailed feedback during campaigns
 
-## 🖥 Multi-PC Compatibility
+## Theme System
+- **Light Mode** — clean, professional light interface
+- **Dark Mode** — fully dark UI for low-light environments
+- **Mix Mode** — dark sidebar with light content area
+- Live theme switching from the menu bar
+- Windows DWM titlebar integration — titlebar matches the selected theme
+- All dialogs and popups follow the active theme
+- Responsive design — works on all screen sizes without text overlap
+
+## Auto Updates + Version Control
+- Automatic update checking on startup
+- Manual update check from Help menu
+- Download and install updates from within the app
+- Version disable system — force updates for critical security fixes
+- Skip versions — server-side control to skip updates for specific versions
+- Backup and rollback support
+
+## Multi-PC Compatibility
 - Works across multiple systems with the same license
 - License tied to your account, not your device
-
-## 📦 Auto Updates + Version Control
-- Get free lifetime updates
-- Stable, tested builds and version rollback available
-
-## 🎨 Modern UI/UX
-- Enhanced dark mode UI implementation
-- More robust and modern application design
-- Improved UI responsiveness
-- Visual feedback and status indicators
+- 2-device limit with device fingerprinting
 
 ---
 
-## 📈 Use Cases
+## Use Cases
 
 | Use Case                         | Why Use SpamPro                          |
 |----------------------------------|------------------------------------------|
@@ -113,10 +219,12 @@
 | Spam Filter Testing              | Rotation, delay, personalization         |
 | Bulk Email Marketing             | High throughput + delivery optimization  |
 | Email Security Research          | Simulate and analyze real-world spam     |
+| Deliverability Testing           | DKIM, List-Unsubscribe, spam score check |
+| Campaign Management              | AI-powered content, multi-rotation       |
 
 ---
 
-## 🧰 How to Use
+## How to Use
 
 1. **Download the Tool**
    - GitHub: [https://github.com/spamtoolsorg/SpamPro](https://github.com/spamtoolsorg/SpamPro)
@@ -125,27 +233,37 @@
    - Run the installer
    - Open SpamPro
 
-3. **Load SMTPs and Lists**
+3. **Activate License**
+   - Enter your SpamTools license hash key
+   - License verifies automatically
+
+4. **Connect SpamTools API (Optional)**
+   - Go to Settings > SpamTools API
+   - Enter your API key from [spamtools.org/dashboard/apis](https://spamtools.org/dashboard/apis)
+   - Unlocks: AI features, bounce validation, spam checking
+
+5. **Load SMTPs and Lists**
    - Add multiple SMTPs manually or via file
    - Use pre-made SMTP templates for quick setup
    - Load email list (TXT/CSV)
 
-4. **Configure Campaign Settings**
-   - Choose delay settings, proxy settings, and bounce API
-   - Configure custom email headers
-   - Customize content using placeholders in subject and body
-   - Set up message rotation for multi-message campaigns
+6. **Configure Campaign Settings**
+   - Set up from-name rotation, subject rotation, message rotation
+   - Configure delay settings, proxy settings, and bounce checking
+   - Add custom email headers
+   - Enable DKIM and List-Unsubscribe for deliverability
+   - Use the Campaign Designer to generate everything with AI
 
-5. **Send Emails**
+7. **Send Emails**
    - Hit send and track real-time progress
    - Monitor live logs, bounces, and SMTP rotation
    - Use Stop, Resume, and Pause controls as needed
 
 ---
 
-## 📺 Video Tutorials
+## Video Tutorials
 
-| 📘 Topic                             | ▶️ Watch on YouTube |
+| Topic                             | Watch on YouTube |
 |--------------------------------------|----------------------|
 | How to Install SpamPro               | [Watch here](https://www.youtube.com/watch?v=EOTPlS6b4eM) |
 | How to Activate SpamPro              | [Watch here](https://www.youtube.com/watch?v=C1JlLs7Kr4M) |
@@ -156,59 +274,81 @@
 
 ---
 
-## 🔐 License Required
+## License Required
 
 SpamPro requires a **valid license** to unlock full functionality.
 
 ### How to Get a License:
 
-- 🛒 Buy from the official site:  
+- Buy from the official site:
   [https://spamtools.org/product/spampro-email-sender-2025/](https://spamtools.org/product/spampro-email-sender-2025/)
 
-- 💬 Or contact support on Telegram:  
+- Or contact support on Telegram:
   [https://t.me/spamtoolsorg](https://t.me/spamtoolsorg)
 
 ### License Notes:
 
-- One license = multiple PCs (same user)
+- One license = multiple PCs (same user, 2-device limit)
 - License linked to your SpamTools account
 
 ---
 
-## 🛠 Support
+## Support
 
 - Website: [https://spamtools.org](https://spamtools.org)
 - Telegram Support: [https://t.me/spamtoolsorg](https://t.me/spamtoolsorg)
-- Email: support@spamtools.org 
+- Help Center: [https://spamtool.tawk.help](https://spamtool.tawk.help)
+- Email: support@spamtools.org
 
 ---
 
-## 🌐 GitHub Repository
+## GitHub Repository
 
-📂 Repo: [https://github.com/spamtoolsorg/SpamPro](https://github.com/spamtoolsorg/SpamPro)
+Repo: [https://github.com/spamtoolsorg/SpamPro](https://github.com/spamtoolsorg/SpamPro)
 
 ---
 
-## Latest Updates - v2.8.5 (2026/2/11)
-## 🚀 Improvements
+## Latest Updates - v3.0.1 (2026/03/28)
+
+### New Features
+- **SpamTools AI Integration** — AI-powered content generation for from-names, subjects, and email templates
+- **Campaign Designer** — one-click complete campaign generation with AI
+- **AI Spam Checker** — analyze email content for spam score with detailed suggestions
+- **Multi From-Name Rotation** — multiple sender names with rotation and AI generation
+- **Multi Subject Rotation** — multiple subject lines with rotation and AI generation
+- **DKIM Signing** — email authentication with enable/disable toggle
+- **List-Unsubscribe (RFC 8058)** — one-click unsubscribe headers for deliverability
+- **Spintax Engine** — {option1|option2|option3} randomized content with nesting support
+- **Per-Domain Throttling** — automatic rate limiting per recipient domain
+- **Soft Bounce Retry** — automatic retry with exponential backoff
+- **SMTP Connection Health Monitor** — real-time monitoring with automatic failover
+- **Session Resumption** — resume interrupted campaigns without duplicate sends
+- **Campaign Import/Export** — save and load campaign configurations (excludes email lists)
+- **Theme System** — Light, Dark, and Mix themes with live switching and DWM titlebar integration
+- **15+ Date/Time Placeholders** — [@date], [@weekday], [@month_name], [@time_12], [@timestamp], and more
+- **Enhanced Email Validation** — MX lookup, disposable domain detection, typo suggestions
+
+### Improvements
+- Full dead code cleanup — removed all debug prints, commented code, and unused imports
+- Codebase-wide import optimization for faster startup
+- Improved UI responsiveness on all screen sizes
+- Custom Nuitka-safe spinner widget (replaces broken QProgressBar marquee)
+- Improved SMTP auto-detection and connection handling
+
+### Previous Updates
+
+#### v2.8.5 (2026/02/11)
 - Improved email sending
 - Clean trusted headers
 - Fast performance
 - Multi-API support
 - Improved SMTP connections
 
-## 📋 Previous Updates - v2.7.0 (January 2026)
-
-### New Features
-- **Message Rotation System** - Add multiple email messages in settings and rotate them automatically after X emails sent
-- **Individual Message Limits** - Configure send limits for each message independently
-- **Advanced Pattern Evasion** - Vary content across large campaigns to avoid spam filter detection
-- **Multi-Message Management** - Perfect for huge lists and maintaining natural sending behavior
-
-### Improvements
-- **Enhanced Campaign Control** - Better handling of multi-message campaigns
-- **Improved Deliverability** - Dynamic message switching for maximum inbox placement
-- **Persistent Message Settings** - All message rotation settings are saved between sessions
+#### v2.7.0 (2026/01)
+- Message Rotation System
+- Individual Message Limits
+- Advanced Pattern Evasion
+- Multi-Message Management
 
 ---
 
