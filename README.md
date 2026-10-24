@@ -1,4 +1,4 @@
-# SpamPro Email Sender 2025
+# SpamPro Email Sender 2027
 
 **SpamPro** is a powerful, feature-rich email sender built for **red teaming**, **spam testing**, **penetration testing**, and **bulk marketing**. Whether you're testing spam filters, simulating phishing attacks, or executing outreach campaigns at scale, SpamPro gives you advanced control, stealth features, and automation.
 
@@ -7,7 +7,7 @@
 
 ---
 
-# SpamPro Email Sender Features (v3.0.1)
+# SpamPro Email Sender Features (v3.2.0)
 
 ## SpamTools AI Integration
 - AI-powered content generation using SpamTools API
@@ -17,6 +17,7 @@
 - Supports placeholder and spintax injection via AI when requested
 - **AI Spam Checker** — analyze your email content for spam score (0-10 scale) with detailed warnings and suggestions
 - Uses your existing SpamTools API key — no extra configuration needed
+- AI auto apply fix
 
 ## Multi From-Name Rotation
 - Add multiple sender display names and rotate them during sending
